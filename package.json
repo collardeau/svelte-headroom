@@ -1,5 +1,5 @@
 {
-  "name": "SvelteComponent",
+  "name": "svelte-headroom",
   "svelte": "src/index.svelte",
   "module": "index.mjs",
   "main": "index.js",
@@ -14,11 +14,25 @@
     "svelte": "^3.0.0"
   },
   "keywords": [
-    "svelte"
+    "svelte",
+    "headroom"
   ],
   "files": [
     "src",
     "index.mjs",
     "index.js"
-  ]
+  ],
+  "description": "Svelte component with HeadroomJS",
+  "version": "1.0.0",
+  "dependencies": {},
+  "author": "Thomas Collardeau",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/collardeau/svelte-headroom.git"
+  },
+  "bugs": {
+    "url": "https://github.com/collardeau/svelte-headroom/issues"
+  },
+  "homepage": "https://github.com/collardeau/svelte-headroom#readme"
 }
