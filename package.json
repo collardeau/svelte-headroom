@@ -23,8 +23,8 @@
     "index.mjs",
     "index.js"
   ],
-  "description": "Svelte component with headroom.js",
-  "version": "2.0.0",
+  "description": "Svelte component with headroom",
+  "version": "2.0.1",
   "author": "Thomas Collardeau",
   "license": "MIT",
   "repository": {
