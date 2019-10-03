@@ -1,9 +1,9 @@
 <script>
-  import Headroom from "headroom";
+  import { headroom } from "headroom";
   export let options = null;
 
-  function headroom(node) {
-    const hr = new Headroom(node, options);
+  function action(node) {
+    const hr = new headroom(node, options);
     hr.init();
     return {
       destroy() {
@@ -13,6 +13,6 @@
   }
 </script>
 
-<div use:headroom>
+<div use:action>
   <slot />
 </div>
