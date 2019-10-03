@@ -13,6 +13,9 @@
     "rollup-plugin-svelte": "^5.0.0",
     "svelte": "^3.0.0"
   },
+  "peerDependencies": {
+    "headroom": "^0.2.0"
+  },
   "keywords": [
     "svelte",
     "headroom"
@@ -22,7 +25,7 @@
     "index.mjs",
     "index.js"
   ],
-  "description": "Svelte component with HeadroomJS",
+  "description": "Svelte component with headroom.js",
   "version": "1.0.0",
   "dependencies": {},
   "author": "Thomas Collardeau",
