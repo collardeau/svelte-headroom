@@ -14,7 +14,7 @@
     "svelte": "^3.0.0"
   },
   "peerDependencies": {
-    "headroom": "^0.2.0"
+    "headroom.js": "^0.9.0"
   },
   "keywords": [
     "svelte",
@@ -26,7 +26,7 @@
     "index.js"
   ],
   "description": "Svelte component with headroom.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "dependencies": {},
   "author": "Thomas Collardeau",
   "license": "MIT",
