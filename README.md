@@ -1,8 +1,10 @@
 # Svelte-Headroom
 
-#### Hide your header until you need it!
+Hide your header until you need it! 
 
-Svelte  Headroom is a Svelte Component to hide or show your header on scroll.
+Svelte Headroom is a Svelte Component to hide or show your header on scroll.
+
+This package has no dependencies.
 
 ## Demo
 
@@ -29,7 +31,9 @@ Svelte  Headroom is a Svelte Component to hide or show your header on scroll.
 
 # Options
 
-You can change the duration of the sliding effect by passing a `duration` prop such as `500ms`;
+### Duration
+
+You can change the duration of the sliding effect by passing a `duration` prop such as `"500ms"`. That value is passed on as a [CSS Transition Duration](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-duration). The default value is `"300ms"`.
 
 ```html
 
@@ -37,5 +41,16 @@ You can change the duration of the sliding effect by passing a `duration` prop s
   <!-- my header -->
 </Headroom>
 
+```
+
+### Offset
+
+You can change the `offset` so the effect doesn't trigger until you've scrolled down a set amout of pixels. The default value is `0`.
+
+```html
+
+<Headroom offset={50}>
+  <!-- my header -->
+</Headroom>
 
 ```
