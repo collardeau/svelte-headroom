@@ -22,18 +22,16 @@ This package has **no dependencies**.
 </script>
 
 <Headroom>
-  <header>
-    My Header
-  </header>
+  <!-- my header -->
 </Headroom>
 
 ```
 
 # Options
 
-### Duration
+### duration
 
-You can change the duration of the sliding effect by passing a `duration` prop such as `"500ms"`. That value is passed on as a [CSS Transition Duration](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-duration). The default value is `"300ms"`.
+The duration of the sliding effect. The value is passed on as a [CSS Transition Duration](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-duration). The default value is `"300ms"`.
 
 ```html
 
@@ -43,13 +41,25 @@ You can change the duration of the sliding effect by passing a `duration` prop s
 
 ```
 
-### Offset
+### offset
 
-You can change the `offset` so the effect doesn't trigger until you've scrolled down a set amout of pixels. The default value is `0`.
+The number of pixels from the top of the page before the effect is allowed to occur. The default value is `0`.
 
 ```html
 
 <Headroom offset={50}>
+  <!-- my header -->
+</Headroom>
+
+```
+
+### tolerance
+
+The amount of pixels that need to be scrolled in either direction for the effect to occur. This is useful if you want the user to be able to scroll slowly and not change the header position. The default value is `0`.
+
+```html
+
+<Headroom tolerance={10}>
   <!-- my header -->
 </Headroom>
 
