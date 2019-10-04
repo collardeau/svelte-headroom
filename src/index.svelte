@@ -1,19 +1,21 @@
 <script>
+  export let duration = "300ms";
+  export let offset = 0;
+
   let headerClass = "pin";
-  let lastDirection = "up";
   let y = 0;
   let lastY = 0;
 
-  export let duration = "300ms";
+  function deriveClass(y, dir) {
+    if (y < offset) return "pin";
+    if (dir === "up") return "pin";
+    if (dir === "down") return "unpin";
+    return headerClass;
+  }
 
-  function changeClass(y) {
-    let result = headerClass;
-    const scrollDirection = lastY - y < 0 ? "down" : "up";
-    const changedDirection = scrollDirection !== lastDirection;
-    if (changedDirection) {
-      result = scrollDirection === "down" ? "unpin" : "pin";
-      lastDirection = scrollDirection;
-    }
+  function updateClass(y) {
+    const dir = lastY - y < 0 ? "down" : "up";
+    const result = deriveClass(y, dir);
     lastY = y;
     return result;
   }
@@ -22,7 +24,7 @@
     node.style.transitionDuration = duration;
   }
 
-  $: headerClass = changeClass(y);
+  $: headerClass = updateClass(y);
 </script>
 
 <style>
@@ -30,7 +32,6 @@
     position: fixed;
     width: 100%;
     top: 0;
-    /* will-change: transform; */
     transition: transform 300ms linear;
   }
   .pin {
@@ -42,7 +43,6 @@
 </style>
 
 <svelte:window bind:scrollY={y} />
-
 <div use:action class={headerClass}>
   <slot />
 </div>
