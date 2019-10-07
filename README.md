@@ -41,7 +41,7 @@ The duration of the sliding effect. The value is passed on as a [CSS Transition 
 
 ```
 
-### `offset` numner
+### `offset` number
 
 The number of pixels from the top of the page before the effect is allowed to occur. The default value is `0`.
 
