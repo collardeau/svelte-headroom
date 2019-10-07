@@ -2,7 +2,7 @@
 
 **Hide your header until you need it!**
 
-Svelte Headroom is a Svelte Component to hide or show your header on scroll, inspired by [headroom.js](https://wicky.nillia.ms/headroom.js/)
+Svelte Headroom is a [Svelte](https://svelte.dev) component to hide or show your header on scroll, inspired by [headroom.js](https://wicky.nillia.ms/headroom.js/)
 
 `svelte-headroom` has **no dependencies**.
 
@@ -29,17 +29,6 @@ Svelte Headroom is a Svelte Component to hide or show your header on scroll, ins
 
 # Props
 
-### `duration` string
-
-The duration of the sliding effect. The value is passed on as a [CSS Transition Duration](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-duration). The default value is `"300ms"`.
-
-```html
-
-<Headroom duration='500ms'>
-  <!-- my header -->
-</Headroom>
-
-```
 
 ### `offset` number
 
@@ -65,6 +54,18 @@ The amount of pixels that need to be scrolled in either direction for the effect
 
 ```
 
+### `duration` string
+
+The duration of the sliding effect. The value is passed on as a [CSS Transition Duration](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-duration). The default value is `"300ms"`.
+
+```html
+
+<Headroom duration='500ms'>
+  <!-- my header -->
+</Headroom>
+
+```
+
 # Events
 
 A `svelte-headroom` component emits two events: `pin` and `unpin`.
@@ -77,3 +78,5 @@ A `svelte-headroom` component emits two events: `pin` and `unpin`.
   <header>My Header</header>
 </Headroom>
 ```
+
+Happy Coding!
