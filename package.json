@@ -24,7 +24,7 @@
     "index.js"
   ],
   "description": "Svelte component with headroom",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "author": "Thomas Collardeau",
   "license": "MIT",
   "repository": {
