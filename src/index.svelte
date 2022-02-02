@@ -45,6 +45,7 @@
 
 <style>
   div {
+    z-index: 9999;
     position: fixed;
     width: 100%;
     top: 0;
